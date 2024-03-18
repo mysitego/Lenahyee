@@ -1,0 +1,268 @@
+<!doctype html>
+<html >
+<head>
+  <meta charset="UTF-8" dir="rtl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./input.css" rel="stylesheet">
+
+  <title>Lenohyee</title>
+  <style>
+    input[placeholder] {
+    text-align: right;
+    padding-right: 35px;
+    }
+  </style>
+</head>
+<body class=" flex  h-screen items-center justify-center  w-[100%] bg-red-300  font-myfont ">
+    <div class="  bg-primary-300 rounded p-3  w-[100%] hidden md:block lg:block flex-col items-center justify-center  ">
+        <div>
+            <h1 class=" font-bold text-2xl  text-center p-3 text-icon font-myfont">   لنحيي شخصاَ قد يفارق الحياه       </h1>
+            <h2 class=" font-bold text-xl  text-center p-3 text-red-50">     أنظم الينا نحن بانتظارك </h2>
+            <img src="../images/Blood donation-pana.png"   alt="home image" class="   object-center px-2  my-auto ">
+        </div>
+    </div>
+
+    <div class=" flex flex-col justify-center items-center mr-0  px-2 py-4 lg:px-10 md:px-10 lg:py-10 md:py-10 bg-red-100 h-screen  w-[100%]">
+        <div class="z-10 w-full">
+            <img src="../images/logo.svg"  alt="" class="mx-auto w-10  md:w-30 lg:w-30">
+            <h1 class="text-[40px] font-bold text-red-400 mb-4 text-center">انشاء حساب</h1>
+            <div class="mb-4">
+                <div class="flex  items-center justify-center "> 
+                    <button  id="individualButton" class=" p-2   bg-pink-100 w-full rounded-sm shadow-sm border hover:bg-pink-50 ">حساب شخصي</button>
+                    <button  id="organizationButton" class=" p-2  bg-red-400 w-full rounded-sm shadow-sm border hover:bg-red-600 hover:text-red-100">حساب مؤسسة</buton>
+                </div>
+            </div>
+        </div>
+
+        <form id="individualForm" class="text-right w-[100%] hidden  ">
+            <div class="text-center text-rd-500 z-10  text-sm pb-5" >
+                <span id="ageError" class=" text-red-500 bg-red-100  hidden">يرجى إدخال عمر صحيح (18-80)</span>
+                <span id="bloodError" class="text-red-500 hidden">يرجى اختيار فصيلة دم صحيحة</span>
+                <span id="nameError" class="text-red-500 hidden">يرجى إدخال اسم صحيح</span>
+                <span id="numberError" class="text-red-500 hidden">يرجى إدخال رقم الجوال بشكل صحيح</span>
+                <span id="emailError" class="text-red-500 hidden">يرجى إدخال البريد الإلكتروني بشكل صحيح</span>
+                <span id="passwordError" class="text-red-500 hidden">كلمة المرور غير صحيحة</span>
+                <span id="confirmPasswordError" class="text-red-500 hidden">تأكيد كلمة المرور غير صحيح</span>
+            </div>
+
+            <div class="md:flex lg:flex gap-1">
+
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="age" name="age" placeholder="ادخل عمرك: 18" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/age.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+                
+                <div class="mb-3 relative w-full md">
+                    <input type="text" id="typeBlood" name="typeBlood" placeholder="فصيلة الدم: O+" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/typeblood.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+                
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="name" name="name" placeholder="ادخل الاسم كاملا" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-[95%] top-0 mt-2 ml-3 flex items-center">
+                    </div>
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/name.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex lg:flex  gap-2">
+                <div class="mb-3 relative w-full">
+                    <input type="email" id="email" name="email" placeholder=" example@gmail.com  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10 ">
+                    <img src="../images/emailicon.svg" class="h-5 w-5" alt="icons">
+                    </div>
+
+                </div>
+                
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="number" name="number" placeholder=" ادخل رقم جوالك بحيث يبدا ب05 او 5 " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/phoneNumber.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex lg:flex  gap-2">
+                <div class="mb-3 relative w-full">
+                    <input type="password" id="password" name="password" placeholder="  كلمة المرور  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center">
+                        <img src="../images/password.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mb-3 relative w-full">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="  تأكيد كلمة المرور  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                        <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center">
+                            <img src="../images/password.svg" alt="">
+                        </div>
+                </div>
+
+                <div class="mb-3 relative w-full " dir="rtl">
+                    <select id="eara" name="eara" class="mt-1  block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm ">
+                        <option class="z-10 bg-red-500"  value="" selected disabled > أختر المنطقة 
+                        </option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit" class=" mt-3 w-full px-3 py-2 bg-red-500 text-red-50 font-medium rounded-md shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-300">  تسجيل الدخول </button>
+
+            <p class="mt-4 text-sm text-gray-500 text-center">
+                ليس لديك حساب؟ <a href="#" class="text-indigo-600 hover:text-indigo-700">تسجيل دخول</a>
+            </p>
+        </form>
+
+        <form id="organizationForm" class="text-right w-[100%] ">
+            <div class="text-center text-rd-500 z-10  text-sm pb-5" >
+                <span id="ageError" class=" text-red-500 bg-red-100  hidden">يرجى إدخال عمر صحيح (18-80)</span>
+                <span id="bloodError" class="text-red-500 hidden">يرجى اختيار فصيلة دم صحيحة</span>
+                <span id="nameError" class="text-red-500 hidden">يرجى إدخال اسم صحيح</span>
+                <span id="numberError" class="text-red-500 hidden">يرجى إدخال رقم الجوال بشكل صحيح</span>
+                <span id="emailError" class="text-red-500 hidden">يرجى إدخال البريد الإلكتروني بشكل صحيح</span>
+                <span id="passwordError" class="text-red-500 hidden">كلمة المرور غير صحيحة</span>
+                <span id="confirmPasswordError" class="text-red-500 hidden">تأكيد كلمة المرور غير صحيح</span>
+            </div>
+
+            <div class="md:flex lg:flex gap-1">
+ 
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="name" name="name" placeholder="  اسم المؤسسة " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-[95%] top-0 mt-2 ml-3 flex items-center">
+                    </div>
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/name.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex lg:flex  gap-2">
+                <div class="mb-3 relative w-full">
+                    <input type="email" id="email" name="email" placeholder=" example@gmail.com  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10 ">
+                    <img src="../images/emailicon.svg" class="h-5 w-5" alt="icons">
+                    </div>
+
+                </div>
+                
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="number" name="number" placeholder="  رقم جوال الموسسة  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/phoneNumber.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex lg:flex  gap-2">
+                <div class="mb-3 relative w-full">
+                    <input type="password" id="password" name="password" placeholder="  كلمة المرور  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center">
+                        <img src="../images/password.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mb-3 relative w-full">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="  تأكيد كلمة المرور  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                        <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center">
+                            <img src="../images/password.svg" alt="">
+                        </div>
+                </div>
+
+                <div class="mb-3 relative w-full " dir="rtl">
+                    <select id="eara" name="eara" class="mt-1  block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm ">
+                        <option class="z-10 bg-red-500"  value="" selected disabled > أختر المنطقة 
+                        </option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit" class=" mt-3 w-full px-3 py-2 bg-red-500 text-red-50 font-medium rounded-md shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-300">  تسجيل الدخول </button>
+
+            <p class="mt-4 text-sm text-gray-500 text-center">
+                ليس لديك حساب؟ <a href="#" class="text-indigo-600 hover:text-indigo-700">تسجيل دخول</a>
+            </p>
+        </form>
+
+        <!-- <form class="text-right w-[100%]">
+            <div class="text-center text-rd-500 z-10  text-sm pb-5" >
+                <span id="ageError" class=" text-red-500 bg-red-100  hidden">يرجى إدخال عمر صحيح (18-80)</span>
+                <span id="bloodError" class="text-red-500 hidden">يرجى اختيار فصيلة دم صحيحة</span>
+                <span id="nameError" class="text-red-500 hidden">يرجى إدخال اسم صحيح</span>
+                <span id="numberError" class="text-red-500 hidden">يرجى إدخال رقم الجوال بشكل صحيح</span>
+                <span id="emailError" class="text-red-500 hidden">يرجى إدخال البريد الإلكتروني بشكل صحيح</span>
+                <span id="passwordError" class="text-red-500 hidden">كلمة المرور غير صحيحة</span>
+                <span id="confirmPasswordError" class="text-red-500 hidden">تأكيد كلمة المرور غير صحيح</span>
+            </div>
+
+            <div class="md:flex lg:flex gap-1">
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="name" name="name" placeholder="  اسم المؤسسة " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-[95%] top-0 mt-2 ml-3 flex items-center">
+                    </div>
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/name.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex lg:flex  gap-2">
+                <div class="mb-3 relative w-full">
+                    <input type="email" id="email" name="email" placeholder="الايميل " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10 ">
+                    <img src="../images/emailicon.svg" class="h-5 w-5" alt="icons">
+                    </div>
+
+                </div>
+                
+                <div class="mb-3 relative w-full">
+                    <input type="text" id="number" name="number" placeholder=" ادخل رقم جوالك بحيث يبدا ب05 او 5 " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                    <img src="../images/phoneNumber.svg" class="h-5 w-5" alt="icons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:flex lg:flex  gap-2">
+                <div class="mb-3 relative w-full">
+                    <input type="password" id="password" name="password" placeholder="  كلمة المرور  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center">
+                        <img src="../images/password.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mb-3 relative w-full">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="  تأكيد كلمة المرور  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                        <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center">
+                            <img src="../images/password.svg" alt="">
+                        </div>
+                </div>
+
+                <div class="mb-3 relative w-full " dir="rtl">
+                    <select id="eara" name="eara" class="mt-1  block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm ">
+                        <option class="z-20 bg-red-500"  value="" selected disabled > أختر المنطقة 
+                        </option>
+                    </select>
+                </div>
+            </div>
+            
+            <button type="submit" class=" mt-3 w-full px-3 py-2 bg-red-500 text-red-50 font-medium rounded-md shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-300">  تسجيل الدخول </button>
+
+            <p class="mt-4 text-sm text-gray-500 text-center">
+                ليس لديك حساب؟ <a href="#" class="text-indigo-600 hover:text-indigo-700">تسجيل دخول</a>
+            </p>
+        </form> -->
+    </div>
+    
+
+</body>
+<script src="js/main.js"></script>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./input.css">
+    <title>Document</title>
+</head>
+<body dir="rtl">
+    <header class=" bg-red-50 w-screen">
+        <div class="navbar  w-full ">
+            <div class="relative">
+                <div class="bg-red-100  w-full  grid grid-rows-1 items-center fixed top-0 z-30  ">
+                    <div class="flex items-center justify-end pl-10 py-2  ">
+                        <span class="pl-3"> <img src="../images/name.svg" alt=""> </span>  <h1>  اهلا وسهلا : يامحمد </h1> 
+                    </div>
+                    <img src="../images/logo.svg" class="absolute top-3 right-10 w-10  " alt="">
+                </div>
+                <nav class="bg-red-50 text-white p-4 shadow-sm fixed top-8 w-full z-10">
+                    <div class="container mx-auto flex flex-wrap md:justify-center justify-end lg:justify-center items-center">
+                    <button class="block md:hidden" id="nav-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 bg-red-500" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                
+                    <div class="hidden w-full md:block md:w-auto items-center justify-center" id="nav-content">
+                        <ul class="md:flex-grow md:flex md:items-center md:justify-center md:text-sm text-red-900  text-xl">
+                        <li class="px-3"><a href="index.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  active:text-red-400    "> الرئيسية  </a></li>
+                        <li class="px-3"><a href="requesties.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  "> الأحتياج </a></li>
+                        <li class="px-3"><a href="bankblood.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">بنوك الدم</a></li>
+                        <li class="px-3"><a href="addrequest.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">طلب حملة تبرع </a></li>
+                        <li class="px-3"><a href="#" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">  عن تطبيقنا  </a></li>
+                        <li class="p-2 bg-red-300  rounded-md shadow-sm border"><a href="login.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">  تسجيل الدخول </a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <a href="index.html" class="flex items-center ">
+                        <div class=" flex items-center justify-end pr-10 absolute top-3 right-0 left-[100%]">
+                            <img src="../images/logo.svg" alt="Your Logo" class="mr-3 w-14 "> 
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main >
+        <div class="bg-red-200  mt-[100px]  flex items-center justify-center gap-5 flex-col">
+            <h1 class="text-4xl text-red-500 py-5 ">  بنوك الدم   </h1>
+        </div>
+        <div class="bg-red-50 md:max-w-mdlg:max-w-md  px-3 lg:px-8 lg:py-8 grid grid-rows-1 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center gap-3 md:py-5">
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            <div class="bg-white  w-full rounded-md flex items-center justify-center flex-col gap-3 transform transition-transform duration-500 ease-in-out hover:scale-105 box-shadow ">          
+                <div class="flex items-center justify-center flex-col py-3  rounded-lg p-6 max-w-sm">
+                    <img src="../images/hospital.svg" alt="Card Image" class="  object-cover ">
+                    <h2 class="font-bold text-xl mt-1 text-center"> مستشفى الملك خالد الجامعي في الرياض</h2>
+                </div>
+                <div class="flex items-center justify-start flex-col ">
+                    <div class=" text-red-500">  الفصيلة الاعلى احتياجا : A- </div>
+                </div>
+                <div class="flex items-center justify-center flex-row w-full">
+                    <button class="bg-red-100 rounded-md shadow-sm w-96 px-2 py-2 m-2 mb-3 btn-anime"> تبرع الآن </button>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+
+
+    </main>
+</body>
+</html>

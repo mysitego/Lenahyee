@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-anime{
+    transition: transform 0.3s ease;
+  }
+  
+  .btn-anime:hover {
+    transform: scale(1.030);
+  }
+  
+ 
+  .box-shadow {
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .box-shadow:hover {
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .myborder{
+    padding: 15px;
+    border: 1px blac solid;
+  }

@@ -1,0 +1,168 @@
+<!doctype html>
+<html >
+<head>
+  <meta charset="UTF-8" dir="rtl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./input.css" rel="stylesheet">
+
+  <title>Lenohyee</title>
+  <style>
+    input[placeholder] {
+    text-align: right;
+    padding-right: 35px;
+    }
+  </style>
+</head>
+<body dir="rtl">
+    <header class=" bg-red-50 w-screen">
+        <div class="navbar  w-full ">
+            <div class="relative">
+                <div class="bg-red-100  w-full  grid grid-rows-1 items-center fixed top-0 z-30  ">
+                    <div class="flex items-center justify-end pl-10 py-2  ">
+                        <span class="pl-3"> <img src="../images/name.svg" alt=""> </span>  <h1>  اهلا وسهلا : يامحمد </h1> 
+                    </div>
+                    <img src="../images/logo.svg" class="absolute top-3 right-10 w-10  " alt="">
+                </div>
+                <nav class="bg-red-50 text-white p-4 shadow-sm fixed top-8 w-full z-10">
+                    <div class="container mx-auto flex flex-wrap md:justify-center justify-end lg:justify-center items-center">
+                    <button class="block md:hidden" id="nav-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500 bg-red-500" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </button>
+                
+                    <div class="hidden w-full md:block md:w-auto items-center justify-center" id="nav-content">
+                        <ul class="md:flex-grow md:flex md:items-center md:justify-center md:text-sm text-red-900  text-xl">
+                        <li class="px-3"><a href="index.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  active:text-red-400    "> الرئيسية  </a></li>
+                        <li class="px-3"><a href="requesties.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  "> الأحتياج </a></li>
+                        <li class="px-3"><a href="bankblood.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">بنوك الدم</a></li>
+                        <li class="px-3"><a href="addrequest.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">طلب حملة تبرع </a></li>
+                        <li class="px-3"><a href="#" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">  عن تطبيقنا  </a></li>
+                        <li class="p-2 bg-red-300  rounded-md shadow-sm border"><a href="login.html" class="block mt-4 md:inline-block md:mt-0 md:mr-4 text-xl  hover:text-red-400  ">  تسجيل الدخول </a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <a href="index.html" class="flex items-center ">
+                        <div class=" flex items-center justify-end pr-10 absolute top-3 right-0 left-[100%]">
+                            <img src="../images/logo.svg" alt="Your Logo" class="mr-3 w-14 "> 
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container ">
+            <div class=" flex flex-col justify-center items-center mr-0  px-2 py-4 lg:px-10 md:px-10 lg:py-10 md:py-10 bg-red-100 h-screen  w-[100%]">
+                <div class="z-10 w-full">
+                    <img src="../images/logo.svg"  alt="" class="mx-auto w-10  md:w-30 lg:w-30">
+                    <h1 class="text-[40px] font-bold text-red-400 mb-4 text-center">   طلب حملة تبرع </h1>
+                </div>
+        
+                <form id="individualForm" class="text-right w-[100%]  bg-red-50 rounded-md  md:p-[20px]">
+
+                    <div class="md:flex lg:flex gap-1">
+                        <div class="mb-3 relative w-full">
+                            <input type="text" id="age" name="age" placeholder=" جهة المبادرة " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                            <div class="absolute right-0 top-0 mt-[0.7rem] mr-2 flex items-center z-10">
+                            <img src="../images/age.svg" class="h-5 w-5" alt="icons">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3 relative w-full " dir="rtl">
+                            <select id="eara" name="eara" class="mt-1  block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm ">
+                                <option class="z-10 bg-red-500"  value="" selected disabled > أختر المنطقة 
+                                </option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-3 relative w-full " dir="rtl">
+                            <select id="eara" name="eara" class="mt-1  block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm ">
+                                <option class="z-10 bg-red-500"  value="" selected disabled > أختر المدينة 
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+        
+                    <div class="md:flex lg:flex  gap-2">
+                        <div class="mb-3 relative w-full">
+                            <input type="date" id="date" name="date" placeholder=" 20-10-2023  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm"> 
+                        </div>
+                        <div class="mb-3 relative w-full">
+                            <input type="date" id="date" name="date" placeholder=" 20-10-2023  " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm"> 
+                        </div>
+                        
+                        <div class="mb-3 relative w-full">
+                            <input type="time" id="number" name="number" placeholder="  الوقت " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                        </div>
+            
+                    </div>
+        
+                    <div class="md:flex lg:flex  gap-2 flex-col py-20">
+                        <h1 class="font-bold p-10"> اشتراك لمدة </h1>
+                        <div class="flex items-center gap-5 justify-between  ">
+                            <label class="inline-flex items-center myborder bg-red-200 w-full m-2 rounded-md ">
+                            <input type="radio" class="form-radio" name="subscription" value="monthly">
+                            <span class="ml-2">اشتراك لمرة واحدة فقط  </span>
+                            </label>
+                            
+                            <label class="inline-flex items-center myborder bg-red-200 w-full m-2 rounded-md">
+                            <input type="radio" class="form-radio" name="subscription" value="1-year">
+                            <span class="ml-2">اشتراك لمدة سنة</span>
+                            </label>
+                            
+                            <label class="inline-flex items-center myborder bg-red-200 w-full m-2 rounded-md">
+                            <input type="radio" class="form-radio" name="subscription" value="2-year">
+                            <span class="ml-2">اشتراك لمدة سنتين</span>
+                            </label>
+                        </div>
+                    </div>
+        
+                    <div class="md:flex lg:flex  gap-2 flex-row ">
+                        <input type="text" id="number" name="number" placeholder="  الهاتف " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                        <input type="text" id="number" name="number" placeholder="  الصفة " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                        <input type="text" id="number" name="number" placeholder="  اسم المسؤول " class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-red-300 focus:border-red-300 sm:text-sm">
+                    </div>
+                    <button type="submit" class=" mt-3 w-full px-3 py-2 bg-red-500 text-red-50 font-medium rounded-md shadow-sm hover:bg-red-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-300">   حفظ الطلب </button>
+                </form>
+                <button id="openModalButton" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">تفاصيل التبرع بالدم</button>
+
+                <div id="modal" class="fixed inset-0 flex items-center justify-center hidden">
+                  <div class="bg-white p-8 w-500 h-500 myborder rounded-md shadow-sm border ">
+                    <!-- تفاصيل التبرع بالدم -->
+                    <h2 class="text-2xl font-bold mb-4 text-center">تفاصيل التبرع بالدم</h2>
+                    <p>هنا يمكنك إضافة التفاصيل والمعلومات حول التبرع بالدم.</p>
+                    <div class="flex items-center justify-center gap-5">
+                        <button id="closeModalButton" class="bg-red-300 hover:bg-red-400  text-white font-bold py-2 px-4 rounded mt-4">إغلاق</button>
+                        <a href="index.html" class="bg-red-300 hover:bg-red-400  text-white font-bold py-2 px-4 rounded mt-4"> 
+                         تخطي واستمرار 
+                        </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+ 
+    <script>
+        const openModalButton = document.getElementById('openModalButton');
+        const closeModalButton = document.getElementById('closeModalButton');
+        const modal = document.getElementById('modal');
+      
+        openModalButton.addEventListener('click', () => {
+          modal.classList.remove('hidden');
+        });
+      
+        closeModalButton.addEventListener('click', () => {
+          modal.classList.add('hidden');
+        });
+      </script>
+
+</body>
+<script src="js/main.js"></script>
+</html>
